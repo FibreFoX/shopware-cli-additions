@@ -1,0 +1,25 @@
+{
+    "name": "dynamicfiles/shopware-cli-additions",
+    "description": "Skeleton plugin",
+    "type": "shopware-platform-plugin",
+    "license": "Apache-2.0",
+    "autoload": {
+        "psr-4": {
+          "DynamicFiles\\Shopware\\CLIAdditions\\": "src/"
+        }
+    },
+    "require": {
+        "shopware/core": ">=6.4.*"
+    },
+    "extra": {
+        "shopware-plugin-class": "DynamicFiles\\Shopware\\CLIAdditions\\CLIAdditionsPlugin",
+        "label": {
+          "de-DE": "Shopware CLI Zusatzbefehle",
+          "en-GB": "Shopware CLI additional commands"
+        },
+        "description": {
+            "de-DE": "Beschreibung in der Administration für das Plugin",
+            "en-GB": "Description in the Administration for this plugin"
+        }
+    }
+}
