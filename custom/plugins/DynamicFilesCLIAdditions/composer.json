@@ -1,25 +1,33 @@
 {
     "name": "dynamicfiles/shopware-cli-additions",
-    "description": "Skeleton plugin",
+    "description": "Shopware Plugin for additional CLI commands",
     "type": "shopware-platform-plugin",
     "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Danny Althoff",
+            "email": "fibrefox@dynamicfiles.de.de",
+            "homepage": "https://www.dynamicfiles.de",
+            "role": "Developer"
+        }
+    ],
     "autoload": {
         "psr-4": {
           "DynamicFiles\\Shopware\\CLIAdditions\\": "src/"
         }
     },
     "require": {
-        "shopware/core": ">=6.4.*"
+        "shopware/core": ">=6.4"
     },
     "extra": {
-        "shopware-plugin-class": "DynamicFiles\\Shopware\\CLIAdditions\\CLIAdditionsPlugin",
+        "shopware-plugin-class": "DynamicFiles\\Shopware\\CLIAdditions\\DFCLIAdditions",
         "label": {
           "de-DE": "Shopware CLI Zusatzbefehle",
           "en-GB": "Shopware CLI additional commands"
         },
         "description": {
-            "de-DE": "Beschreibung in der Administration für das Plugin",
-            "en-GB": "Description in the Administration for this plugin"
+            "de-DE": "Ergänzung nützlicher Shopware CLI Befehle für die Steuerung von Funktionen, die nicht im offiziellen Shop vorhanden sind",
+            "en-GB": "Supplemental useful Shopware CLI commands for controlling features, which are not existing in the official shop"
         }
     }
 }

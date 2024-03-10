@@ -4,6 +4,6 @@ namespace DynamicFiles\Shopware\CLIAdditions;
 
 use Shopware\Core\Framework\Plugin;
 
-class CLIAdditionsPlugin extends Plugin
+class DFCLIAdditions extends Plugin
 {
 }

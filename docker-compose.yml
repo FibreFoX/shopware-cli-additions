@@ -11,7 +11,7 @@ services:
         ports:
             - 3306:3306
     shopware:
-        image: shyim/shopware:6.4.20-php8.2
+        image: shyim/shopware:6.5.8.7-php8.2.16
         environment:
             # openssl rand -hex 32
             APP_SECRET: e2c99b53e834d8220a57b02c53d3a210ac3ce42ea16981f0c5a0e37dfa368083
@@ -26,6 +26,6 @@ services:
             INSTALL_CURRENCY: EUR
             TZ: Europe/Berlin
         ports:
-            - 8080:8080
+            - 127.0.0.1:8080:80
         volumes:
             - ./custom/plugins:/var/www/html/custom/plugins
