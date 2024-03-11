@@ -1,5 +1,7 @@
 # Additional CLI commands for Shopware 6
 
+![Plugin-Logo](./custom/plugins/DynamicFilesCLIAdditions/src/Resources/config/plugin.png)
+
 ## About this plugin
 
 When installing and managing Shopware instances, especially when using Ansible for configuration management, a lot of crucial CLI commands are just plain MISSING. This project is intended for learning purposes and for having others participate from my learning.
@@ -10,6 +12,10 @@ Initialized via (but modified afterwards):
 ```sh
 docker compose run --rm -it --entrypoint /usr/bin/sudo shopware -E -u www-data php /var/www/html/bin/console plugin:create --create-config DynamicFilesCLIAdditions
 ```
+
+## Important note
+
+This is a learning project (which is not yet published)! If you want to use it, use it at your own risk!
 
 ## Dev-Setup
 Some commands I am using while development after `docker compose up`:
