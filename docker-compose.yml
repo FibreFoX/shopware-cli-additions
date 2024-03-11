@@ -13,6 +13,8 @@ services:
     shopware:
         image: shyim/shopware:6.5.8.7-php8.2.16
         environment:
+            APP_DEBUG: 0
+            APP_ENV: dev
             # openssl rand -hex 32
             APP_SECRET: e2c99b53e834d8220a57b02c53d3a210ac3ce42ea16981f0c5a0e37dfa368083
             # openssl rand -hex 32
@@ -28,4 +30,5 @@ services:
         ports:
             - 127.0.0.1:8080:80
         volumes:
-            - ./custom/plugins:/var/www/html/custom/plugins
+            - ./custom/plugins/DynamicFilesCLIAdditions/src:/var/www/html/custom/plugins/DynamicFilesCLIAdditions/src
+            - ./custom/plugins/DynamicFilesCLIAdditions/composer.json:/var/www/html/custom/plugins/DynamicFilesCLIAdditions/composer.json

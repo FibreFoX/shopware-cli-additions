@@ -29,5 +29,11 @@
             "de-DE": "Ergänzung nützlicher Shopware CLI Befehle für die Steuerung von Funktionen, die nicht im offiziellen Shop vorhanden sind",
             "en-GB": "Supplemental useful Shopware CLI commands for controlling features, which are not existing in the official shop"
         }
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/runtime": true
+        },
+        "process-timeout": 0
     }
 }

@@ -5,8 +5,21 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="DynamicFiles\Shopware\CLIAdditions\Command\UsersRolesCommand">
+        <service id="DynamicFiles\Shopware\CLIAdditions\Command\ListACLRolesCommand">
             <tag name="console.command"/>
+            <argument type="service" id="acl_role.repository"/>
+        </service>
+        <service id="DynamicFiles\Shopware\CLIAdditions\Command\ListACLRolePermissionsCommand">
+            <tag name="console.command"/>
+            <argument type="service" id="acl_role.repository"/>
+        </service>
+        <service id="DynamicFiles\Shopware\CLIAdditions\Command\ListRulesCommand">
+            <tag name="console.command"/>
+            <argument type="service" id="rule.repository"/>
+        </service>
+        <service id="DynamicFiles\Shopware\CLIAdditions\Command\GetIdFromRuleCommand">
+            <tag name="console.command"/>
+            <argument type="service" id="rule.repository"/>
         </service>
     </services>
 </container>
