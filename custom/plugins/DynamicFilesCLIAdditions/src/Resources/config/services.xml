@@ -21,5 +21,9 @@
             <tag name="console.command"/>
             <argument type="service" id="rule.repository"/>
         </service>
+        <service id="DynamicFiles\Shopware\CLIAdditions\Command\SkipFirstRunWizardCommand">
+            <tag name="console.command"/>
+            <argument type="service" id="Shopware\Core\Framework\Store\Services\FirstRunWizardService"/>
+        </service>
     </services>
 </container>
