@@ -30,6 +30,10 @@ docker compose run --rm -it --entrypoint /usr/bin/sudo shopware -E -u www-data p
 ```
 docker compose run --rm -it --entrypoint /usr/bin/sudo shopware -E -u www-data php /var/www/html/bin/console system:config:set core.frw.completedAt "2024-03-01T12:00:00+00:00"
 ```
+or
+```
+docker compose run --rm -it --entrypoint /usr/bin/sudo shopware -E -u www-data php /var/www/html/bin/console cli-additions:system:skip-first-run-wizard
+```
 
 ## Knowhow
 https://symfony.com/doc/current/service_container/debug.html

@@ -25,5 +25,18 @@
             <tag name="console.command"/>
             <argument type="service" id="Shopware\Core\Framework\Store\Services\FirstRunWizardService"/>
         </service>
+        <service id="DynamicFiles\Shopware\CLIAdditions\Command\AcceptUsageDataSharingCommand">
+            <tag name="console.command"/>
+            <argument type="service" id="Shopware\Core\System\UsageData\Consent\ConsentService"/>
+        </service>
+        <service id="DynamicFiles\Shopware\CLIAdditions\Command\RevokeUsageDataSharingCommand">
+            <tag name="console.command"/>
+            <argument type="service" id="Shopware\Core\System\UsageData\Consent\ConsentService"/>
+        </service>
+        <service id="DynamicFiles\Shopware\CLIAdditions\Command\SkipUsageDataSharingForUserCommand">
+            <tag name="console.command"/>
+            <argument type="service" id="Shopware\Core\System\UsageData\Consent\BannerService"/>
+            <argument type="service" id="user.repository"/>
+        </service>
     </services>
 </container>
