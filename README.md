@@ -17,6 +17,21 @@ docker compose run --rm -it --entrypoint /usr/bin/sudo shopware -E -u www-data p
 
 This is a learning project (which is not yet published)! If you want to use it, use it at your own risk!
 
+## Provided commands
+
+```
+Available commands for the "cli-additions" namespace:
+  cli-additions:rules:get-id                            Get ID of rule with given name.
+  cli-additions:rules:list                              List all available rules.
+  cli-additions:system:acl-roles:list                   List all available user roles.
+  cli-additions:system:acl-roles:list-role-permissions  List all permissions for given user role.
+  cli-additions:system:skip-first-run-wizard            Marks the FirstRunWizard (FRW) as already executed.
+  cli-additions:system:usage-data:accept                Accept the terms and enable system usage data sharing.
+  cli-additions:system:usage-data:revoke                Revoke/Decline the terms for system usage data sharing.
+  cli-additions:system:usage-data:skip-for-user         Skip the usage data sharing request for given user.
+```
+
+
 ## Dev-Setup
 Some commands I am using while development after `docker compose up`:
 

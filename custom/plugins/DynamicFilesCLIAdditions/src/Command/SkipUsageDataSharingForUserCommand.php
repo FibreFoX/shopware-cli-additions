@@ -15,7 +15,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 #[AsCommand(
     name: 'cli-additions:system:usage-data:skip-for-user',
-    description: 'TODO'
+    description: 'Skip the usage data sharing request for given user.'
 )]
 class SkipUsageDataSharingForUserCommand extends Command
 {
@@ -40,7 +40,6 @@ class SkipUsageDataSharingForUserCommand extends Command
 
         $criteria = new Criteria();
 
-        // TODO
         $username = $input->getOption('name');
         $userid = $input->getOption('id');
 

@@ -16,7 +16,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 #[AsCommand(
     name: 'cli-additions:system:usage-data:accept',
-    description: 'TODO'
+    description: 'Accept the terms and enable system usage data sharing.'
 )]
 class AcceptUsageDataSharingCommand extends Command
 {

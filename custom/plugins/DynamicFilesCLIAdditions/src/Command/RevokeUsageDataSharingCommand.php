@@ -16,7 +16,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 #[AsCommand(
     name: 'cli-additions:system:usage-data:revoke',
-    description: 'TODO'
+    description: 'Revoke/Decline the terms for system usage data sharing.'
 )]
 class RevokeUsageDataSharingCommand extends Command
 {
