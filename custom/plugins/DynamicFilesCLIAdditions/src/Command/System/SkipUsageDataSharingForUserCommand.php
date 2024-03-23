@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace DynamicFiles\Shopware\CLIAdditions\Command;
+namespace DynamicFiles\Shopware\CLIAdditions\Command\System;
 
 use Shopware\Core\Framework\Context;
 use Shopware\Core\Framework\DataAbstractionLayer\EntityRepository;

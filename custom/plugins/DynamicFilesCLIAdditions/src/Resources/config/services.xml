@@ -21,19 +21,19 @@
             <tag name="console.command"/>
             <argument type="service" id="rule.repository"/>
         </service>
-        <service id="DynamicFiles\Shopware\CLIAdditions\Command\SkipFirstRunWizardCommand">
+        <service id="DynamicFiles\Shopware\CLIAdditions\Command\System\SkipFirstRunWizardCommand">
             <tag name="console.command"/>
             <argument type="service" id="Shopware\Core\Framework\Store\Services\FirstRunWizardService"/>
         </service>
-        <service id="DynamicFiles\Shopware\CLIAdditions\Command\AcceptUsageDataSharingCommand">
+        <service id="DynamicFiles\Shopware\CLIAdditions\Command\System\AcceptUsageDataSharingCommand">
             <tag name="console.command"/>
             <argument type="service" id="Shopware\Core\System\UsageData\Consent\ConsentService"/>
         </service>
-        <service id="DynamicFiles\Shopware\CLIAdditions\Command\RevokeUsageDataSharingCommand">
+        <service id="DynamicFiles\Shopware\CLIAdditions\Command\System\RevokeUsageDataSharingCommand">
             <tag name="console.command"/>
             <argument type="service" id="Shopware\Core\System\UsageData\Consent\ConsentService"/>
         </service>
-        <service id="DynamicFiles\Shopware\CLIAdditions\Command\SkipUsageDataSharingForUserCommand">
+        <service id="DynamicFiles\Shopware\CLIAdditions\Command\System\SkipUsageDataSharingForUserCommand">
             <tag name="console.command"/>
             <argument type="service" id="Shopware\Core\System\UsageData\Consent\BannerService"/>
             <argument type="service" id="user.repository"/>
