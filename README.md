@@ -17,6 +17,10 @@ docker compose run --rm -it --entrypoint /usr/bin/sudo shopware -E -u www-data p
 
 This is a learning project (which is not yet published)! If you want to use it, use it at your own risk!
 
+## Compatibility
+
+Should work on Shopware version `6.5.x` and `6.6.x`. Does **not** work on `6.4.x` due to Shopware plugin changes of `EntityRepository`.
+
 ## Provided commands
 
 ```
