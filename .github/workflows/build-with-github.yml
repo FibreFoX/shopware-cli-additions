@@ -16,9 +16,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: extension-folder
-          working-directory: ./custom/plugins/
           path: |
-            DynamicFilesCLIAdditions
+            ./custom/plugins/*
   Create-Github-Draft-Release:
     needs: [Bundle-ZIP-Extension]
     runs-on: ubuntu-latest
